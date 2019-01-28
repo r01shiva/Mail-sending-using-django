@@ -1,0 +1,89 @@
+{% load staticfiles %}
+<head>
+<style>
+    body{
+        box-sizing: border-box;
+    }
+    table{
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    textarea,input[type=text] {
+
+      width: 200%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+        button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+</style>
+</head>
+<body>
+
+<h2>Applicants</h2>
+<p></p>
+    <form  method="post">
+        {% csrf_token %}
+<div style="overflow:scroll;height: 45%">
+<table>
+    <tr>
+        <th>Select</th>
+        <th>Name</th>
+        <th>Email ID</th>
+        <th>Branch</th>
+        <th>Year</th>
+        <th>Mobile no.</th>
+    </tr>
+
+        {% for a in form %}
+            <tr>
+                <th> <input type="checkbox" id="check" name="check" value="{{a.email}}"></th>
+                <th>{{ a.fname}} {{a.lname}}</th>
+                <th>{{a.email}}</th>
+                <th>{{a.branch}}</th>
+                <th>{{a.year}}</th>
+                <th>{{a.mobileno}}</th>
+            </tr>
+        {% endfor %}
+</table>
+</div>
+
+    <img src='/static/webd/img/Tdc.png' style="height: 40%;width: 25%;margin-top: 30px; margin-left:5%;float:left">
+
+    <div style="float:left;margin-top: 30px; margin-left: 10%">
+ <label>Subject</label>
+     <br>
+     <input type="text" name="subject" placeholder="subject" id="subject"  value="{{ subject }}"><br>
+        <label>Message</label>
+     <br>
+     <textarea rows="4" cols="50"  name="message" placeholder="message" id="message">{{ message }}</textarea><br>
+        <button type="submit" style="margin-left: 170%">Send</button></form>
+</div>
+</body>
+
+

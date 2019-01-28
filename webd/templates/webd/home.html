@@ -1,0 +1,240 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TDC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="image/png" href="/static/webd/img/icon1.png">
+    <link rel="stylesheet" type="text/css" href="/static/webd/css/intern.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny|Oswald|Pacifico|Thasadith" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="nav"  id="mynav">
+        <a href="#"style="font-size:35px;"><img src='static/webd/img/Tdc.png'></a>
+        <a href="javascript:void(0);" class="log" onclick="document.getElementById('mylog').style.display='block'">Apply</a>
+        <a href="#details">Details</a>
+        <a href="{% url 'applicants' %}" >Applicants</a>
+        <a href="javascript:void(0);" class="icon" onclick="navigation()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+    {% block content %}
+    {% endblock %}
+    <div class="navimg">
+        <img src="/static/webd/img/551.jpg">
+    </div>
+
+        <div class="picture" id="0">
+            <img src="/static/webd/img/22.jpg">
+            <div class="text" style="top:75%;left:10%;"><H1>Want to become a<br> Website Developer ?</H1></div>
+            <a href="javascript:void(0);" id="next" onclick="next(1)">&#10095;</a>
+        </div>
+        <div class="picture tut" id="1">
+            <img src="/static/webd/img/2.jpg">
+            <div class="text" style="top:16%;left:5%;"><h1>Any idea about <br>Frontend Designing ?</h1></div>
+           <a href="javascript:void(0);"  id="next" onclick="next(1)">&#10095;</a>
+            <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
+        </div>
+        <div class="picture tut" id="2">
+            <img src="/static/webd/img/33.jpg">
+            <div class="text" style="top:16%;left:70%;"><H1>Do you know about <br>HTML<br>CSS<br>Java Script ?</H1></div>
+             <a href="javascript:void(0);"  id="next" onclick="next(1)">&#10095;</a>
+            <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
+        </div>
+        <div class="picture tut" id="3">
+            <img src="/static/webd/img/44.jpg">
+            <div class="text" style="top:16%;left:5%;"><H1>Learn HTML<br>CSS <br> Java Script <br>here.</H1></div>
+           <a href="javascript:void(0);"  id="next" onclick="next(1)">&#10095;</a>
+            <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
+
+        </div>
+            <div class="picture tut " id="4">
+            <img src="/static/webd/img/111.jpg">
+                <div class="text" style="top:78%;left:10%;"><H1>Become a Website Developer</H1></div>
+             <a href="javascript:void(0);"  id="next" onclick="next(1)">&#10095;</a>
+            <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
+        </div>
+        <div class="picture tut" id="5">
+            <img src="/static/webd/img/react.png">
+            <div class="text" style="top:26%;left:10%;"><H1>Learn</H1></div>
+            <a href="javascript:void(0);"  id="next" onclick="next(1)">&#10095;</a>
+            <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
+        </div>
+        <div class="picture tut" id="6">
+            <img src="/static/webd/img/7.jpg">
+            <div class="text" style="top:38%;left:35%;"><H1>Appy here for Internship.</H1></div>
+            <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
+            <a href="javascript:void(0);" class="log" onclick="document.getElementById('mylog').style.display='block'">
+            <button class="buttona buttonab" type="submit">Apply</button>
+            </a>
+        </div>
+    <div class="contain" style=" font-family: 'Oswald', sans-serif;">
+    <div class="container" id="details">
+        <div class="content center" style="font-size: 22px;color:#FF2758;">INTERNSHIP DETAILS</div><br><br>
+        <div class="content  center" style="font-size: 20px;"><u>About Internship:</u></div><br>
+        <div class="content b center" style="font-size: 18px;"> Website Developer Internship:</div><br>
+        <div class="float">
+        <div class="content b">Eligibility:</div>
+        <p>Any candidates who are pursuing graduation or recent passouts can apply -BE/BTech/MTech/BCA/MCA (2019/2020/2021 Batches)</p>
+        <div class="content b">Benefits of internship:</div>
+        <p>-Domain Knowledge<br>
+            -Project Training and Implementaion<br>
+            -Full stack development experience<br>
+        </p>
+
+        <div class="content b">Internship Duration:</div>
+        <p> 1 Month –2 Months.</p>
+        </div>
+        <div class="float">
+                  <div class="content b">Roles And Responsibilities:</div>
+        <p>The candidate has to work on the project assigned by the company.<br>
+            And also has to work on the day to day tasks.<br>
+            The candidate will be working on both frontend and backend part of the project</p><br>
+        <div class="content b">Perks:</div>
+        <p>1. Internship Experience Certificate<br>
+            2. Flexble working hours<br>
+        </p>
+
+        </div>
+        <div class="float">
+             <div class="content" style="font-size: 22px;color:#2874A6;">NO. OF POSITIONS</div>
+        <p>5</p>
+
+        <div class="content" style="font-size: 22px;color:#2874A6;">SKILLS REQUIRED</div>
+        <p>HTML<br> <div class="content" style="font-size: 22px;color:#2874A6;">APPLICATION DEADLINE</div>
+        <p>Apply by  : <strong>23rd Mar `19</strong></p>
+        <div class="content" style="font-size: 22px;color:#2874A6;">STIPEND</div><p>Rs. 0</p>
+        </div>
+        <div class="clearix"></div>
+         <div class="content center" style="font-size: 22px;color:#2874A6;">ABOUT COMPANY</div>
+        <p>
+            <br>
+            TechCiti has become a pioneer in providing distinguished end-to-end IT infrastructure solutions to its customers through our business functions maximizing customer engagement with personalized services. We believe that today more than ever, businesses are dependent on technology solutions.
+            <br>
+            We have successfully established in our business functions across 12 + major cities across PAN India with over 56 + satisfied corporate customers.
+            <br>
+            Our vision is to enable people and organizations realize their potential reinventing their engagement in defining the future using - technology.
+            <br>
+            Our mission is to achieve the leading position as a distinguished & absolute end-to-end information technology infrastructure & service provider. We want to develop with profitable growth through superior Customer service, Innovation, Quality and Commitment.
+            <br>
+            Core Values: Integrity, Excellence, Innovation, Customer-Centricity, Team-Work</p>
+        <br>
+        <br>
+        <a href="javascript:void(0);" class="buttona" onclick="document.getElementById('mylog').style.display='block'">Apply</a>
+
+
+        </div>
+    </div>
+    <div class="form">
+        <div class="modal" id="mylog">
+        <form class="modal-content animate" method="post" >
+            {% csrf_token %}
+           <div class="headapp">Application Form</div><br>
+            <label>First name</label><br>
+            <input id="fname" type="text" name="fname" placeholder="First Name" value="{{ fname }}" required>
+            <br>
+        <label>Last name</label>
+            <br>
+            <input type="text" name="lname" placeholder="Last Name" id="lname"  value="{{ lname }}"><br>
+        <label>Email Address</label>
+            <br>
+            <input type="email" name="email" placeholder="Email Address" id="email"  value="{{ email }}" required><br>
+        <label>Branch</label>
+            <br>
+            <input type="text" name="branch" placeholder="Branch" required id="branch"  value="{{ branch }}"><br>
+            <label>Year</label>
+            <br>
+            <input type="text" name="year" placeholder="Year" required id="year"  value="{{ year }}"><br>
+            <label>  Mobile No.</label>
+            <br>
+            <input type="text" id="mobileno" name="mobileno" placeholder="Mobile no." value="{{ mobileno }}"  required><br>
+            <button class="button1" type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+     <div class="contact" id="contact">
+        <p style="text-align: center;font-size: larger;font-weight: bolder;">Contact US</p>
+        <span><i class="fa fa-map-marker" style="width:30px"></i> Chicago, US</span><br>
+        <span><i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515</span><br>
+            <span><i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com</span><br>
+
+    </div>
+    <div class="footer">
+
+
+
+        <ul>Contact Us
+            <li><a href="#contact">Contact Details</a></li>
+        </ul>
+        <ul><br>
+
+            <li><a href="#" class="log" onclick="document.getElementById('mylog').style.display='block'">Apply</a></li>
+
+
+        </ul>
+        <ul><br><li> <a href="#details" >Details</a></li>
+         <li><a href="javascript:void(0)" id="dark" onclick="dark()">Light </a></li>
+
+        </ul>
+
+
+
+        <div class="clearix"></div>
+        <p style="position: relative; text-align:center">The Disruption Challenge © All Rights Reserved.</p>
+
+    </div>
+    <script>
+        var modal = document.getElementById('mylog');
+        window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+            }
+        }
+        var k=-1;
+        function next(z) {
+            k = k + z;
+            if (z === 1) {
+                var x = document.getElementById(k);
+                var y = document.getElementById(k + 1);
+            }
+            else if (z === -1) {
+                var x = document.getElementById(k + 2);
+                var y = document.getElementById(k + 1);
+            }
+            x.style.display = 'none';
+            y.style.display = 'block';
+        }
+
+        function navigation() {
+            var x=document.getElementById("mynav");
+            if (x.className==="nav"){
+                x.className="responsive";
+            }
+            else {
+                x.className="nav"
+            }
+        }
+        function dark() {
+            var x=document.getElementsByClassName("container");
+            var y=document.getElementsByTagName("body");
+            var z=document.getElementById("dark");
+            if (x[0].style.color==='rgb(23, 32, 42)') {
+                x[0].style.color = 'white';
+                y[0].style.backgroundColor = '#17202A';
+                z.innerHTML='Light';
+            }
+            else {
+                x[0].style.color = '#17202A';
+                y[0].style.backgroundColor = 'white';
+                z.innerHTML='Dark';
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>
