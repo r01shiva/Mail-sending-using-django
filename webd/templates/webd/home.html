@@ -5,7 +5,7 @@
 	<title>TDC</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/png" href="/static/webd/img/icon1.png">
+    <link rel="shortcut icon" type="image/png" href="/static/webd/img/tdc2.png">
     <link rel="stylesheet" type="text/css" href="/static/webd/css/intern.css">
     <link href="https://fonts.googleapis.com/css?family=Coiny|Oswald|Pacifico|Thasadith" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +15,7 @@
         <a href="#"style="font-size:35px;"><img src='static/webd/img/Tdc.png'></a>
         <a href="javascript:void(0);" class="log" onclick="document.getElementById('mylog').style.display='block'">Apply</a>
         <a href="#details">Details</a>
-        <a href="{% url 'applicants' %}" >Applicants</a>
+        <a href="{% url 'login_user' %}" >Applicants</a>
         <a href="javascript:void(0);" class="icon" onclick="navigation()">
             <i class="fa fa-bars"></i>
         </a>
@@ -29,46 +29,44 @@
 
         <div class="picture" id="0">
             <img src="/static/webd/img/22.jpg">
-            <div class="text" style="top:75%;left:10%;"><H1>Want to become a<br> Website Developer ?</H1></div>
+            <div class="text s0" ><H1>Want to become a<br> Website Developer ?</H1></div>
             <a href="javascript:void(0);" id="next" onclick="next(1)">&#10095;</a>
         </div>
         <div class="picture tut" id="1">
             <img src="/static/webd/img/2.jpg">
-            <div class="text" style="top:16%;left:5%;"><h1>Any idea about <br>Frontend Designing ?</h1></div>
+            <div class="text s1"><h1>Any idea about <br>Frontend Designing ?</h1></div>
            <a href="javascript:void(0);"  id="next" onclick="next(1)">&#10095;</a>
             <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
         </div>
         <div class="picture tut" id="2">
             <img src="/static/webd/img/33.jpg">
-            <div class="text" style="top:16%;left:70%;"><H1>Do you know about <br>HTML<br>CSS<br>Java Script ?</H1></div>
+            <div class="text s2" ><H1>Do you know about <br>HTML<br>CSS<br>Java Script ?</H1></div>
              <a href="javascript:void(0);"  id="next" onclick="next(1)">&#10095;</a>
             <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
         </div>
         <div class="picture tut" id="3">
             <img src="/static/webd/img/44.jpg">
-            <div class="text" style="top:16%;left:5%;"><H1>Learn HTML<br>CSS <br> Java Script <br>here.</H1></div>
+            <div class="text s3"><H1>Learn HTML<br>CSS <br> Java Script <br>here.</H1></div>
            <a href="javascript:void(0);"  id="next" onclick="next(1)">&#10095;</a>
             <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
 
         </div>
             <div class="picture tut " id="4">
             <img src="/static/webd/img/111.jpg">
-                <div class="text" style="top:78%;left:10%;"><H1>Become a Website Developer</H1></div>
+                <div class="text s4"><H1>Become a Website Developer</H1></div>
              <a href="javascript:void(0);"  id="next" onclick="next(1)">&#10095;</a>
             <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
         </div>
         <div class="picture tut" id="5">
             <img src="/static/webd/img/react.png">
-            <div class="text" style="top:26%;left:10%;"><H1>Learn</H1></div>
+            <div class="text s5"><H1>Learn</H1></div>
             <a href="javascript:void(0);"  id="next" onclick="next(1)">&#10095;</a>
             <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
         </div>
         <div class="picture tut" id="6">
-            <img src="/static/webd/img/7.jpg">
-            <div class="text" style="top:38%;left:35%;"><H1>Appy here for Internship.</H1></div>
-            <a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
+            <img src="/static/webd/img/7.jpg"><a href="javascript:void(0);" id="prev" onclick="next(-1)">&#10094;</a>
             <a href="javascript:void(0);" class="log" onclick="document.getElementById('mylog').style.display='block'">
-            <button class="buttona buttonab" type="submit">Apply</button>
+            <div class="text s6"><H1>Appy here for Internship.</H1></div>
             </a>
         </div>
     <div class="contain" style=" font-family: 'Oswald', sans-serif;">
@@ -112,23 +110,20 @@
          <div class="content center" style="font-size: 22px;color:#2874A6;">ABOUT COMPANY</div>
         <p>
             <br>
-            TechCiti has become a pioneer in providing distinguished end-to-end IT infrastructure solutions to its customers through our business functions maximizing customer engagement with personalized services. We believe that today more than ever, businesses are dependent on technology solutions.
+            We at TDC profess a hybrid approach to the solve the problem of lack of education for startups leading from the academic front,
+            while building up to the industry based trends of the future.
+            Our aim is simple - “Build a better future for India with sustainably disruptive
+            innovations” and we plan to accomplish it with the youth who instead of merely seeking established jobs would rather create more
+            jobs or qualify for jobs in Deep Technology,
+            which has the potential to rewrite the industrial fairy tail known as the Republic of India.
             <br>
-            We have successfully established in our business functions across 12 + major cities across PAN India with over 56 + satisfied corporate customers.
-            <br>
-            Our vision is to enable people and organizations realize their potential reinventing their engagement in defining the future using - technology.
-            <br>
-            Our mission is to achieve the leading position as a distinguished & absolute end-to-end information technology infrastructure & service provider. We want to develop with profitable growth through superior Customer service, Innovation, Quality and Commitment.
-            <br>
-            Core Values: Integrity, Excellence, Innovation, Customer-Centricity, Team-Work</p>
-        <br>
         <br>
         <a href="javascript:void(0);" class="buttona" onclick="document.getElementById('mylog').style.display='block'">Apply</a>
 
 
         </div>
     </div>
-    <div class="form">
+     <div class="form">
         <div class="modal" id="mylog">
         <form class="modal-content animate" method="post" >
             {% csrf_token %}
@@ -155,11 +150,11 @@
         </form>
     </div>
     </div>
-     <div class="contact" id="contact">
-        <p style="text-align: center;font-size: larger;font-weight: bolder;">Contact US</p>
-        <span><i class="fa fa-map-marker" style="width:30px"></i> Chicago, US</span><br>
-        <span><i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515</span><br>
-            <span><i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com</span><br>
+    <div class="contact">
+        <p>Contact US</p>
+        <span><i class="fa fa-map-marker" style="width:30px"></i> Delhi, India</span><br>
+        <span><i class="fa fa-phone" style="width:30px"></i> Phone: XXXXYYYYZZ</span><br>
+            <span><i class="fa fa-envelope" style="width:30px"> </i> Email: info.tdc18@gmail.com</span><br>
 
     </div>
     <div class="footer">
