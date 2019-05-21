@@ -21,6 +21,24 @@ Requirement:
         pip install xhtml2pdf
         
         
+Note:
+
+use your details in place of it for perfect working of emails.
+you have to make some cahnge on your gmail account also 
+like alow mupltiple emails
+
+or you can use Google forms
+
+changes are
+intern/settings.py
+
+EMAIL_HOST_USER='rathourabhishek00@gmail.com'
+EMAIL_HOST_PASSWORD=''
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_USE_SSL=False
+EMAIL_HOST='smtp.gmail.com'
+        
         
 Copyrights TDC only for logo  
 otherwise 
